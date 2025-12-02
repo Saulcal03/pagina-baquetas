@@ -1,16 +1,149 @@
 ---
+import Layout from '../layouts/Layout.astro';
+import ProductCard from '../components/ProductCard.astro';
+import products from '../data/products.json';
 
+// Tomamos solo los primeros 3 productos para una sección de "Destacados"
+const featuredProducts = products.slice(0, 3);
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="GEMES M-3 | Precision Drumsticks">
+    
+    <section class="relative h-[85vh] w-full bg-black overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 z-0">
+            <img 
+                src="/images/hero-gemes.jpg" 
+                alt="Baquetas GEMES M-3" 
+                class="w-full h-full object-cover grayscale brightness-40 contrast-125 scale-105"
+            />
+            <div class="absolute inset-0 bg-black/40"></div> 
+            <div class="absolute inset-0 bg-gradient-to-t from-gemes-black via-transparent to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
+            <h2 class="text-gemes-gold tracking-[0.2em] text-lg md:text-xl font-bold uppercase mb-4 animate-fadeIn">
+                Professional Drumsticks
+            </h2>
+            <h1 class="font-heading text-6xl md:text-8xl lg:text-9xl text-white font-bold uppercase leading-none mb-8 drop-shadow-lg">
+                PERFECT <br/> <span class="text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-500">BALANCE</span>
+            </h1>
+            <div class="flex flex-col md:flex-row gap-4 justify-center mt-8">
+                <a href="#catalogo" class="bg-gemes-gold text-black font-heading font-bold uppercase tracking-wider py-4 px-10 text-xl hover:bg-white transition-colors duration-300">
+                    Ver Catálogo
+                </a>
+                <a href="#artistas" class="border-2 border-white text-white font-heading font-bold uppercase tracking-wider py-4 px-10 text-xl hover:bg-white hover:text-black transition-colors duration-300">
+                    Artistas GEMES
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gemes-black py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <h3 class="font-heading text-4xl text-white uppercase mb-10 border-l-8 border-gemes-gold pl-6">
+                Explora por Serie
+            </h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 h-auto md:h-[600px]">
+                
+                <div class="group relative col-span-1 md:col-span-2 row-span-2 bg-zinc-900 overflow-hidden cursor-pointer border border-zinc-800">
+                    <video autoplay loop muted playsinline class="w-full h-full object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700">
+                        <source src="/videos/video-baquetas.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute bottom-0 left-0 p-8 z-10">
+                        <h4 class="font-heading text-4xl text-white uppercase italic transform group-hover:-translate-y-2 transition-transform drop-shadow-lg">American Hickory</h4>
+                        <p class="text-gemes-gold mt-2 opacity-0 group-hover:opacity-100 transition-opacity font-bold text-lg">El estándar de la industria</p>
+                    </div>
+                </div>
+
+                <div class="group relative bg-zinc-900 overflow-hidden cursor-pointer border border-zinc-800">
+                    <img src="/images/signature.jpg" alt="Signature" class="w-full h-full object-cover opacity-50 group-hover:opacity-70 transition-opacity"/>
+                    <div class="absolute inset-0 flex items-center justify-center border-4 border-transparent group-hover:border-gemes-gold transition-all duration-300 m-4">
+                        <h4 class="font-heading text-2xl text-white uppercase bg-black/50 px-4 py-2">Signature Series</h4>
+                    </div>
+                </div>
+
+                <div class="group relative bg-zinc-900 overflow-hidden cursor-pointer border border-zinc-800">
+                    <img src="/images/marching.jpg" alt="Marching" class="w-full h-full object-cover opacity-50 group-hover:opacity-70 transition-opacity"/>
+                    <div class="absolute inset-0 flex items-center justify-center border-4 border-transparent group-hover:border-gemes-gold transition-all duration-300 m-4">
+                        <h4 class="font-heading text-2xl text-white uppercase bg-black/50 px-4 py-2">Marching</h4>
+                    </div>
+                </div>
+
+                <div class="relative col-span-1 md:col-span-2 bg-zinc-800 overflow-hidden cursor-pointer flex items-center border border-zinc-800 group">
+                    <div class="w-1/2 p-8 relative z-20 pointer-events-none">
+                        <h4 class="font-heading text-3xl text-gemes-gold uppercase mb-2">Accesorios</h4>
+                        <p class="text-zinc-400 mb-4">Pads, estuches, llaves y repuestos.</p>
+                        <span class="text-white font-bold underline decoration-gemes-gold underline-offset-4">Ver Todo</span>
+                    </div>
+
+                    <div class="absolute right-0 top-0 w-2/3 h-full z-10">
+                        
+                        <img 
+                            src="/images/bolsa.png" 
+                            class="carousel-img absolute inset-0 w-full h-full object-cover opacity-60 transition-opacity duration-1000" 
+                            style="opacity: 1;" 
+                        />
+                        
+                        <img 
+                            src="/images/PON-AQUI-FOTO-2.jpg" 
+                            class="carousel-img absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" 
+                        />
+                        
+                        <img 
+                            src="/images/PON-AQUI-FOTO-3.jpg" 
+                            class="carousel-img absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" 
+                        />
+                        
+                        <div class="absolute inset-0 bg-gradient-to-r from-zinc-800 via-zinc-800/80 to-transparent"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <script>
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('.carousel-img');
+            
+            if(slides.length > 0) {
+                setInterval(() => {
+                    // Ocultar la actual
+                    slides[currentSlide].style.opacity = '0';
+                    // Pasar a la siguiente
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    // Mostrar la siguiente
+                    slides[currentSlide].style.opacity = '0.6';
+                }, 3000); // Cambia cada 3 segundos
+            }
+        </script>
+    </section>
+
+    <section id="catalogo" class="bg-black py-24 border-t border-zinc-900">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h3 class="font-heading text-5xl text-white uppercase">Nuevos Lanzamientos</h3>
+                <div class="h-1 w-24 bg-gemes-gold mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {featuredProducts.map((p) => (
+                    <ProductCard 
+                        model={p.model}
+                        brand={p.brand}
+                        material={p.material}
+                        price={p.price}
+                        image={p.image}
+                    />
+                ))}
+            </div>
+            
+            <div class="text-center mt-16">
+                <a href="/catalogo" class="inline-block border border-zinc-700 text-zinc-300 hover:text-gemes-gold hover:border-gemes-gold px-12 py-4 uppercase font-heading tracking-widest transition-all">
+                    Ver todo el catálogo
+                </a>
+            </div>
+        </div>
+    </section>
+
+</Layout>

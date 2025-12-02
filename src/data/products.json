@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "model": "5A American Classic",
+    "brand": "ProStick",
+    "material": "Hickory",
+    "tip": "Madera",
+    "price": 240,
+    "image": "https://placehold.co/600x400/1a1a1a/orange?text=Baquetas+5A"
+  },
+  {
+    "id": 2,
+    "model": "7A Jazz Special",
+    "brand": "ProStick",
+    "material": "Maple (Arce)",
+    "tip": "Nylon",
+    "price": 220,
+    "image": "https://placehold.co/600x400/1a1a1a/orange?text=Baquetas+7A"
+  },
+  {
+    "id": 3,
+    "model": "2B Rock Heavy",
+    "brand": "ProStick",
+    "material": "Roble",
+    "tip": "Madera Grande",
+    "price": 280,
+    "image": "https://placehold.co/600x400/1a1a1a/orange?text=Baquetas+2B"
+  }
+]

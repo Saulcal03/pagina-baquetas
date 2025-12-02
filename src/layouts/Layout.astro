@@ -1,0 +1,30 @@
+---
+import Navbar from '../components/Navbar.astro';
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+		<meta charset="UTF-8" />
+		<meta name="description" content="Tienda de baquetas profesionales" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{title}</title>
+	</head>
+	<body class="bg-black min-h-screen font-sans text-white">
+		
+        <Navbar />
+
+        <slot />
+
+        <footer class="text-center text-zinc-600 py-8 border-t border-zinc-900 mt-20">
+			<p>&copy; 2025 ProStick. Pasión por el ritmo.</p>
+		</footer>
+
+	</body>
+</html>
