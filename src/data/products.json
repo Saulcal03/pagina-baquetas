@@ -1,29 +1,74 @@
 [
   {
     "id": 1,
-    "model": "5A American Classic",
-    "brand": "ProStick",
-    "material": "Hickory",
-    "tip": "Madera",
+    "model": "5A American Hickory",
+    "brand": "GEMES M-3",
+    "material": "Hickory Selecto",
+    "tip": "Madera (Gota)",
     "price": 240,
-    "image": "https://placehold.co/600x400/1a1a1a/orange?text=Baquetas+5A"
+    "image": "/images/baquetas.png"
   },
   {
     "id": 2,
-    "model": "7A Jazz Special",
-    "brand": "ProStick",
+    "model": "7A Jazz Maple",
+    "brand": "GEMES M-3",
     "material": "Maple (Arce)",
     "tip": "Nylon",
     "price": 220,
-    "image": "https://placehold.co/600x400/1a1a1a/orange?text=Baquetas+7A"
+    "image": "https://images.unsplash.com/photo-1621332061685-6119842c3821?q=80&w=800"
   },
   {
     "id": 3,
     "model": "2B Rock Heavy",
-    "brand": "ProStick",
-    "material": "Roble",
+    "brand": "GEMES M-3",
+    "material": "Roble Japonés",
     "tip": "Madera Grande",
     "price": 280,
-    "image": "https://placehold.co/600x400/1a1a1a/orange?text=Baquetas+2B"
+    "image": "https://images.unsplash.com/photo-1582736780708-466d71b3e70d?q=80&w=800"
+  },
+  {
+    "id": 4,
+    "model": "Signature Alex R.",
+    "brand": "GEMES Artist",
+    "material": "Hickory Blanco",
+    "tip": "Barril",
+    "price": 350,
+    "image": "/images/logo.jpg"
+  },
+  {
+    "id": 5,
+    "model": "Marching Snare",
+    "brand": "GEMES Corps",
+    "material": "Hickory Reforzado",
+    "tip": "Redonda",
+    "price": 400,
+    "image": "/images/march.jpg"
+  },
+  {
+    "id": 6,
+    "model": "Timbales Stick",
+    "brand": "GEMES Latin",
+    "material": "Hickory",
+    "tip": "Sin punta",
+    "price": 200,
+    "image": "https://images.unsplash.com/photo-1571327073757-71d13c24de30?q=80&w=800"
+  },
+  {
+    "id": 7,
+    "model": "5B Classic",
+    "brand": "GEMES M-3",
+    "material": "Hickory",
+    "tip": "Madera",
+    "price": 250,
+    "image": "https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?q=80&w=800"
+  },
+  {
+    "id": 8,
+    "model": "Escobillas Jazz",
+    "brand": "GEMES Accesorios",
+    "material": "Acero",
+    "tip": "Retráctil",
+    "price": 450,
+    "image": "/images/accesorios.jpg"
   }
 ]
